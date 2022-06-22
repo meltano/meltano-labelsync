@@ -291,16 +291,28 @@ labels: &common
 valuestream: &valuestream
   "valuestream/Academy":
     color: "#3cb371"
+    alias:
+      - ""valuestream::academy":"
   "valuestream/Business Operation":
     color: "#36454f"
+    alias:
+      - "valuestream::business operation"
   "valuestream/Ecosystem":
     color: "#6699cc"
+    alias:
+      - "valuestream::ecosystem"
   "valuestream/Hub":
     color: "#AD4363"
+    alias:
+      - "valuestream::hub"
   "valuestream/Meltano":
     color: "#434ac1"
+    alias:
+      - "valuestream::meltano"
   "valuestream/SDK":
     color: "#00b140"
+    alias:
+      - "valuestream::sdk"
 
 # Repositories
 repos:
