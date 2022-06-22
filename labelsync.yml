@@ -50,8 +50,10 @@ labels: &common
     color: "#ffffff"
   "api":
     color: "#cd5b45"
-  "accepting pull requests":
+  "Accepting Pull Requests":
     color: "#0E8A16"
+    alias:
+      - "accepting pull requests"
   "analyze":
     color: "#0033CC"
   "architecture decision":
@@ -160,8 +162,10 @@ labels: &common
     color: "#0033CC"
   "okr: be the dataops os":
     color: "#9400d3"
-  "okr: build the team (hiring":
+  "OKR: Build the Team (Hiring)":
     color: "#9400d3"
+    alias:
+      - "okr: build the team (hiring)"
   "okr: improve ease of deployment":
     color: "#9400d3"
   "okr: improve new user experience":
