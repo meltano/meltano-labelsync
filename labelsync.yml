@@ -54,6 +54,7 @@ labels: &common
     color: "#0E8A16"
     alias:
       - "accepting pull requests"
+      - "accepting merge requests"
   "analyze":
     color: "#0033CC"
   "architecture decision":
@@ -160,8 +161,10 @@ labels: &common
     color: "#c21e56"
   "notebook":
     color: "#0033CC"
-  "okr: be the dataops os":
+  "OKR: Be the DataOps Platform Infra":
     color: "#9400d3"
+    alias:
+      - "okr: be the dataops os"
   "OKR: Build the Team (Hiring)":
     color: "#9400d3"
     alias:
