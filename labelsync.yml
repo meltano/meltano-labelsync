@@ -1,0 +1,325 @@
+# Colors
+colors:
+  area: &area "#FFD700"
+  kind: &kind "#3B5BDB"
+  status: &status "#F8F9FA"
+  bug: &bug "#EE0000"
+  priority: &priority "#F783AC"
+  scope: &scope "#27CF79"
+  team: &team'#FDF4E8'
+  release: &release "#A5D8ff"
+  process: &process "#EB9100"
+
+# There's one YAML feature that you *absolutely* want to use in your config.
+#
+# It's references. You make a referencable value using &name, and reuse it
+# by typing *name. If you are referencing an object (like "labels" below), use
+# "<<: *common" to spread the values out (like "repos" below "labels").
+#
+# To learn more about the special YAML symbols, check out
+# https://medium.com/@kinghuang/docker-compose-anchors-aliases-extensions-a1e4105d70bd.
+
+# Labels
+labels: &common
+  "bug":
+    description: Something isn't working                     
+    color: "#d73a4a"
+  "documentation":
+    description: Improvements or additions to documentation  
+    color: "#0075ca"
+  "duplicate":
+    description: This issue or pull request already exists   
+    color: "#cfd3d7"
+  "enhancement":
+    description: New feature or request                      
+    color: "#a2eeef"
+  "good first issue":
+    description: Good for newcomers                          
+    color: "#7057ff"
+  "help wanted":
+    description: Extra attention is needed                   
+    color: "#008672"
+  "invalid":
+    description: This doesn't seem right                     
+    color: "#e4e669"
+  "question":
+    description: Further information is requested            
+    color: "#d876e3"
+  "wontfix":
+    description: This will not be worked on                  
+    color: "#ffffff"
+  "api":
+    color: "#cd5b45"
+  "Accepting Pull Requests":
+    color: "#0E8A16"
+    alias:
+      - "accepting pull requests"
+      - "accepting merge requests"
+  "analyze":
+    color: "#0033CC"
+  "architecture decision":
+    color: "#A8D695"
+  "awaiting action::author":
+    color: "#9400d3"
+  "backend":
+    color: "#c39953"
+  "breaking change":
+    color: "#9400d3"
+  "ci/cd":
+    color: "#e6e6fa"
+  "cli":
+    color: "#D9534F"
+  "collaboration":
+    color: "#AD4363"
+  "community":
+    color: "#8E44AD"
+  "community-contributed mr":
+    color: "#e6e6fa"
+  "configuration":
+    color: "#7F8C8D"
+  "customer prospect":
+    color: "#004E00"
+  "customer success":
+    color: "#004E00"
+  "customer support":
+    color: "#7F8C8D"
+  "d&i":
+    color: "#cc338b"
+  "dashboard":
+    color: "#5CB85C"
+  "data science / ml":
+    color: "#FFECDB"
+  "demo day::shared":
+    color: "#c39953"
+  "demo day::to share":
+    color: "#ed9121"
+  "demo day::up next":
+    color: "#f7e7ce"
+  "deployment":
+    color: "#D1D100"
+  "deps":
+    color: "#5CB85C"
+  "discussion":
+    color: "#AD8D43"
+  "docker":
+    color: "#428BCA"
+  "dogfooding":
+    color: "#8E44AD"
+  "enterprise edition ideas":
+    color: "#69D100"
+  "execsponsor::aj":
+    color: "#6699cc"
+  "execsponsor::douwe":
+    color: "#6699cc"
+  "execsponsor::emily":
+    color: "#6699cc"
+  "execsponsor::reb":
+    color: "#6699cc"
+  "execsponsor::taylor":
+    color: "#6699cc"
+  "exploration":
+    color: "#F0AD4E"
+  "extract":
+    color: "#0033CC"
+  "frontend":
+    color: "#ed9121"
+  "hack day":
+    color: "#e6e6fa"
+  "handbook":
+    color: "#3cb371"
+  "housekeeping":
+    color: "#D10069"
+  "incident":
+    color: "#CC0033"
+  "installation":
+    color: "#FF0000"
+  "integrations":
+    color: "#6699cc"
+  "internal":
+    color: "#CC0033"
+  "legal":
+    color: "#5843AD"
+  "load":
+    color: "#0033CC"
+  "making money":
+    color: "#5CB85C"
+  "marketing":
+    color: "#44AD8E"
+  "marketing::blog feature":
+    color: "#0000ff"
+  "meltano - retrospective":
+    color: "#0033CC"
+  "meltano culture and values":
+    color: "#9400d3"
+  "meltano.com":
+    color: "#5843AD"
+  "model":
+    color: "#0033CC"
+  "needs refinement":
+    color: "#c21e56"
+  "needs research spike":
+    color: "#c21e56"
+  "notebook":
+    color: "#0033CC"
+  "OKR: Be the DataOps Platform Infra":
+    color: "#9400d3"
+    alias:
+      - "okr: be the dataops os"
+  "OKR: Build the Team (Hiring)":
+    color: "#9400d3"
+    alias:
+      - "okr: build the team (hiring)"
+  "okr: improve ease of deployment":
+    color: "#9400d3"
+  "okr: improve new user experience":
+    color: "#9400d3"
+  "okr: managed meltano alpha":
+    color: "#9400d3"
+  "okr: managed meltano beta":
+    color: "#9400d3"
+  "okr: managed meltano commercial tier":
+    color: "#9400d3"
+  "okr: managed meltano enterprise tier":
+    color: "#9400d3"
+  "okr: managed meltano ga":
+    color: "#9400d3"
+  "office hours::discussed":
+    color: "#36454f"
+  "office hours::to discuss":
+    color: "#6699cc"
+  "office hours::up next":
+    color: "#0000ff"
+  "orchestrate":
+    color: "#0033CC"
+  "performance":
+    color: "#D9534F"
+  "plugin management":
+    color: "#6699cc"
+  "product":
+    color: "#428BCA"
+  "product vision":
+    color: "#0033CC"
+  "project awesome":
+    color: "#6699cc"
+  "rca":
+    color: "#CC0033"
+  "regression":
+    color: "#FF0000"
+  "release":
+    color: "#69D100"
+  "roadmap":
+    color: "#cc338b"
+  "sales":
+    color: "#D1D100"
+  "salesforce":
+    color: "#428BCA"
+  "security":
+    color: "#34495E"
+  "snowflake":
+    color: "#428BCA"
+  "start stop continue":
+    color: "#9402d3"
+  "testing":
+    color: "#7F8C8D"
+  "transform":
+    color: "#0033CC"
+  "tutorials":
+    color: "#A8D695"
+  "ui":
+    color: "#428BCA"
+  "ux":
+    color: "#428BCA"
+  "user onboarding":
+    color: "#A8D695"
+  "user research":
+    color: "#428BCA"
+  "user support":
+    color: "#6699cc"
+  "visualization":
+    color: "#5CB85C"
+  "windows support":
+    color: "#428BCA"
+  "won't do":
+    color: "#CC0033"
+  "flow::blocked":
+    color: "#CC0033"
+  "flow::doing":
+    color: "#428BCA"
+  "flow::review":
+    color: "#5CB85C"
+  "flow::to do":
+    color: "#F0AD4E"
+  "flow::triage":
+    color: "#34495E"
+  "kind::bug":
+    color: "#ff0000"
+  "kind::feature":
+    color: "#428BCA"
+  "kind::non-product":
+    color: "#36454f"
+  "kind::risk":
+    color: "#eee600"
+  "kind::tech debt":
+    color: "#ed9121"
+  "plugin::airflow":
+    color: "#0000ff"
+  "plugin::sqlfluff":
+    color: "#808080"
+  "urgency::default":
+    color: "#ededed"
+  "urgency::high":
+    color: "#c21e56"
+  "urgency::higher":
+    color: "#dc143c"
+  "urgency::highest":
+    color: "#ff0000"
+  "urgency::low":
+    color: "#0000ff"
+  "v2.0":
+    color: "#3cb371"
+  "valuestream::academy":
+    color: "#3cb371"
+  "valuestream::business operation":
+    color: "#36454f"
+  "valuestream::ecosystem":
+    color: "#6699cc"
+  "valuestream::hub":
+    color: "#AD4363"
+  "valuestream::meltano":
+    color: "#434ac1"
+  "valuestream::sdk":
+    color: "#00b140"
+  "has attachment":
+    color: "#fbca04"
+  "gitlab merge request":
+    color: "#b36b00"
+  "migrated from gitlab":
+    color: "#EB2FBD"
+  "telemetry":
+    color: "#0052cc"
+  "reminder":
+    color: "#ededed"
+
+
+# Repositories
+repos:
+  meltano:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  hub:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  sdk:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  squared:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
