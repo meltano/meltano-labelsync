@@ -292,7 +292,7 @@ valuestream: &valuestream
   "valuestream/Academy":
     color: "#3cb371"
     alias:
-      - ""valuestream::academy":"
+      - "valuestream::academy"
   "valuestream/Business Operation":
     color: "#36454f"
     alias:
