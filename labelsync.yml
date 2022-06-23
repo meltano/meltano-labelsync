@@ -73,8 +73,8 @@ labels: &common
     color: "#AD4363"
   "community":
     color: "#8E44AD"
-    color: "#e6e6fa"
   "Community-Contributed PR":
+    color: "#e6e6fa"
     alias:
       - "community-contributed pr"
       - "community-contributed mr"
