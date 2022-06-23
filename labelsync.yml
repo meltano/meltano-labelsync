@@ -21,18 +21,14 @@ colors:
 
 # Labels
 labels: &common
-  "bug":
-    description: Something isn't working                     
-    color: "#d73a4a"
-  "documentation":
+  "Documentation":
     description: Improvements or additions to documentation  
     color: "#0075ca"
+    alias:
+     - "documentation"
   "duplicate":
     description: This issue or pull request already exists   
     color: "#cfd3d7"
-  "enhancement":
-    description: New feature or request                      
-    color: "#a2eeef"
   "good first issue":
     description: Good for newcomers                          
     color: "#7057ff"
@@ -65,8 +61,10 @@ labels: &common
     color: "#c39953"
   "breaking change":
     color: "#9400d3"
-  "ci/cd":
+  "CI/CD":
     color: "#e6e6fa"
+    alias:
+      - "ci/cd"
   "cli":
     color: "#D9534F"
   "collaboration":
@@ -236,8 +234,10 @@ labels: &common
     color: "#A8D695"
   "user research":
     color: "#428BCA"
-  "user support":
+  "User Support":
     color: "#6699cc"
+    alias:
+      - "user support"
   "visualization":
     color: "#5CB85C"
   "windows support":
@@ -254,10 +254,16 @@ labels: &common
     color: "#F0AD4E"
   "flow::triage":
     color: "#34495E"
-  "kind::bug":
+  "kind/Bug":
     color: "#ff0000"
-  "kind::feature":
+    alias: 
+    - "bug"
+    - "kind::bug"
+  "kind/Feature":
     color: "#428BCA"
+    alias:
+      - "enhancement"
+      - "kind::feature"
   "kind::non-product":
     color: "#36454f"
   "kind::risk":
@@ -286,8 +292,10 @@ labels: &common
     color: "#b36b00"
   "migrated from gitlab":
     color: "#EB2FBD"
-  "telemetry":
+  "Telemetry":
     color: "#0052cc"
+    alias:
+      - "telemetry"
   "reminder":
     color: "#ededed"
 
