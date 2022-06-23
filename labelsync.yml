@@ -73,8 +73,11 @@ labels: &common
     color: "#AD4363"
   "community":
     color: "#8E44AD"
-  "community-contributed mr":
+  "Community-Contributed PR":
     color: "#e6e6fa"
+    alias:
+      - "community-contributed pr"
+      - "community-contributed mr"
   "configuration":
     color: "#7F8C8D"
   "customer prospect":
@@ -277,18 +280,6 @@ labels: &common
     color: "#0000ff"
   "v2.0":
     color: "#3cb371"
-  "valuestream::academy":
-    color: "#3cb371"
-  "valuestream::business operation":
-    color: "#36454f"
-  "valuestream::ecosystem":
-    color: "#6699cc"
-  "valuestream::hub":
-    color: "#AD4363"
-  "valuestream::meltano":
-    color: "#434ac1"
-  "valuestream::sdk":
-    color: "#00b140"
   "has attachment":
     color: "#fbca04"
   "gitlab merge request":
@@ -300,6 +291,31 @@ labels: &common
   "reminder":
     color: "#ededed"
 
+valuestream: &valuestream
+  "valuestream/Academy":
+    color: "#3cb371"
+    alias:
+      - "valuestream::academy"
+  "valuestream/Business Operation":
+    color: "#36454f"
+    alias:
+      - "valuestream::business operation"
+  "valuestream/Ecosystem":
+    color: "#6699cc"
+    alias:
+      - "valuestream::ecosystem"
+  "valuestream/Hub":
+    color: "#AD4363"
+    alias:
+      - "valuestream::hub"
+  "valuestream/Meltano":
+    color: "#434ac1"
+    alias:
+      - "valuestream::meltano"
+  "valuestream/SDK":
+    color: "#00b140"
+    alias:
+      - "valuestream::sdk"
 
 # Repositories
 repos:
@@ -308,18 +324,22 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *valuestream
   hub:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *valuestream
   sdk:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *valuestream
   squared:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *valuestream
