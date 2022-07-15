@@ -440,6 +440,7 @@ all_labels: &all_labels
   <<: *common
   <<: *leadership
   <<: *marketing
+  <<: *plugins
   <<: *strategy
   <<: *valuestream
 
