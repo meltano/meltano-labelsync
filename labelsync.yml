@@ -333,3 +333,47 @@ repos:
     labels:
       <<: *common
       <<: *valuestream
+  meltano:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream
+  hub:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream
+  sdk:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream
+  squared:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream
+  handbook:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream
+  internal-general:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream
+  internal-marketing:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream
+
+
