@@ -109,16 +109,6 @@ labels: &common
     color: "#8E44AD"
   "enterprise edition ideas":
     color: "#69D100"
-  "execsponsor::aj":
-    color: "#6699cc"
-  "execsponsor::douwe":
-    color: "#6699cc"
-  "execsponsor::emily":
-    color: "#6699cc"
-  "execsponsor::reb":
-    color: "#6699cc"
-  "execsponsor::taylor":
-    color: "#6699cc"
   "exploration":
     color: "#F0AD4E"
   "extract":
@@ -163,28 +153,6 @@ labels: &common
     color: "#c21e56"
   "notebook":
     color: "#0033CC"
-  "OKR: Be the DataOps Platform Infra":
-    color: "#9400d3"
-    alias:
-      - "okr: be the dataops os"
-  "OKR: Build the Team (Hiring)":
-    color: "#9400d3"
-    alias:
-      - "okr: build the team (hiring)"
-  "okr: improve ease of deployment":
-    color: "#9400d3"
-  "okr: improve new user experience":
-    color: "#9400d3"
-  "okr: managed meltano alpha":
-    color: "#9400d3"
-  "okr: managed meltano beta":
-    color: "#9400d3"
-  "okr: managed meltano commercial tier":
-    color: "#9400d3"
-  "okr: managed meltano enterprise tier":
-    color: "#9400d3"
-  "okr: managed meltano ga":
-    color: "#9400d3"
   "office hours::discussed":
     color: "#36454f"
   "office hours::to discuss":
@@ -308,6 +276,28 @@ labels: &common
   "reminder":
     color: "#ededed"
 
+execsponsor: &execsponsor
+  "execsponsor/AJ":
+    alias:
+      - "execsponsor::aj"
+    color: "#6699cc"
+  "execsponsor/Douwe":
+    alias:
+      - "execsponsor::douwe"
+    color: "#6699cc"
+  "execsponsor/Emily":
+    alias:
+      - "execsponsor::emily"
+    color: "#6699cc"
+  "execsponsor/Reb":
+    alias:
+      - "execsponsor::reb"
+    color: "#6699cc"
+  "execsponsor/Taylor":
+    alias:
+      - "execsponsor::taylor"
+    color: "#6699cc"
+
 marketing: &marketing
   "content":
     color: "#c21e56"
@@ -351,6 +341,44 @@ marketing: &marketing
   "website":
     color: "#BB6797"
 
+strategy: &strategy
+  "OKR: Be the DataOps Platform Infra":
+    color: "#9400d3"
+    alias:
+      - "okr: be the dataops os"
+  "OKR: Build the Team (Hiring)":
+    color: "#9400d3"
+    alias:
+      - "okr: build the team (hiring)"
+  "OKR: Ease of Deployment":
+    color: "#9400d3"
+    alias:
+      - "okr: improve ease of deployment"
+  "OKR: New User Experience":
+    color: "#9400d3"
+    alias:
+      - "okr: improve new user experience"
+  "OKR: Managed Meltano - Alpha":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano alpha"
+  "OKR: Managed Meltano - Beta":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano beta"
+  "OKR: Managed Meltano - Commercial Tier":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano commercial tier"
+  "OKR: Managed Meltano - Enterprise Tier":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano enterprise tier"
+  "OKR: Managed Meltano - GA":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano ga"
+
 valuestream: &valuestream
   "valuestream/Academy":
     color: "#3cb371"
@@ -379,10 +407,14 @@ valuestream: &valuestream
 
 all_labels: &all_labels
   <<: *common
+  <<: *execsponsor
   <<: *marketing
+  <<: *strategy
   <<: *valuestream
 
-# Repositories
+####################
+#   Repositories   #
+####################
 repos:
   "*":
     config:
