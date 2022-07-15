@@ -379,49 +379,49 @@ repos:
       <<: *valuestream
   meltano:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *marketing
       <<: *valuestream
   hub:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *marketing
       <<: *valuestream
   sdk:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *marketing
       <<: *valuestream
   squared:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *marketing
       <<: *valuestream
   handbook:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *marketing
       <<: *valuestream
   internal-general:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *marketing
       <<: *valuestream
   internal-marketing:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *marketing
