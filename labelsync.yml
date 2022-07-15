@@ -51,6 +51,7 @@ labels: &common
     alias:
       - "accepting pull requests"
       - "accepting merge requests"
+      - "Accepting Merge Requests"
   "analyze":
     color: "#0033CC"
   "architecture decision":
@@ -256,6 +257,7 @@ labels: &common
     color: "#34495E"
   "kind/Bug":
     color: "#ff0000"
+    description: "Something isn't working"
     alias: ["kind::bug","bug"]
   "kind/Feature":
     color: "#428BCA"
@@ -295,6 +297,50 @@ labels: &common
   "reminder":
     color: "#ededed"
 
+marketing: &marketing
+  "content":
+    color: "#c21e56"
+  "content review":
+    color: "#5319E7"
+    description: "Request for Eng or Product Content Review"
+  "dx":
+    color: "#c21e56"
+  "event":
+    color: "#c21e56"
+  "google tag manager":
+    color: "#6699cc"
+  "hubspot":
+    color: "#ededed"
+  "Marketing Priority":
+    description: "cross-functional support request"
+    color: "#5319E7"
+  "mktgops::backlog":
+    color: "#36454f"
+  "mktgops::blocked":
+    color: "#ff0000"
+  "mktgops::deck":
+    color: "#808080"
+  "mktgops::done":
+    color: "#2AF22A"
+  "mktgops::uat":
+    color: "#ededed"
+  "mktgops::wip":
+    color: "#6699cc"
+  "needs-engineering":
+    description: "from marketing needs engineering"
+    color: "#5319E7"
+  "p1-mktgops":
+    color: "#843B39"
+  "p2-mktgops":
+    color: "#6699cc"
+  "p3-mktgops":
+    color: "#808080"
+  "social":
+    color: "#e6e6fa"
+  "website":
+    color: "#BB6797"
+
+
 valuestream: &valuestream
   "valuestream/Academy":
     color: "#3cb371"
@@ -328,48 +374,56 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
+      <<: *marketing
       <<: *valuestream
   meltano:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *marketing
       <<: *valuestream
   hub:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *marketing
       <<: *valuestream
   sdk:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *marketing
       <<: *valuestream
   squared:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *marketing
       <<: *valuestream
   handbook:
     config:
       removeUnconfiguredLabels: false
     labels:
-      <<: *common
+      <<: *
+      <<: *marketing
       <<: *valuestream
   internal-general:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *marketing
       <<: *valuestream
   internal-marketing:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *marketing
       <<: *valuestream
 
 
