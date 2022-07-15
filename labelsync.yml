@@ -329,7 +329,7 @@ valuestream: &valuestream
 repos:
   "*":
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
       <<: *valuestream
