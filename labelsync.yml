@@ -378,10 +378,9 @@ valuestream: &valuestream
       - "valuestream::sdk"
 
 all_labels: &all_labels
-  labels:
-    <<: *common
-    <<: *marketing
-    <<: *valuestream
+  <<: *common
+  <<: *marketing
+  <<: *valuestream
 
 # Repositories
 repos:
