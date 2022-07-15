@@ -62,6 +62,8 @@ labels: &common
     color: "#c39953"
   "breaking change":
     color: "#9400d3"
+  "candidate":
+    color: "#c39953"
   "CI/CD":
     color: "#e6e6fa"
     alias:
@@ -109,16 +111,6 @@ labels: &common
     color: "#8E44AD"
   "enterprise edition ideas":
     color: "#69D100"
-  "execsponsor::aj":
-    color: "#6699cc"
-  "execsponsor::douwe":
-    color: "#6699cc"
-  "execsponsor::emily":
-    color: "#6699cc"
-  "execsponsor::reb":
-    color: "#6699cc"
-  "execsponsor::taylor":
-    color: "#6699cc"
   "exploration":
     color: "#F0AD4E"
   "extract":
@@ -129,6 +121,8 @@ labels: &common
     color: "#e6e6fa"
   "handbook":
     color: "#3cb371"
+  "hired":
+    color: "#009966"
   "housekeeping":
     color: "#D10069"
   "incident":
@@ -163,28 +157,10 @@ labels: &common
     color: "#c21e56"
   "notebook":
     color: "#0033CC"
-  "OKR: Be the DataOps Platform Infra":
-    color: "#9400d3"
-    alias:
-      - "okr: be the dataops os"
-  "OKR: Build the Team (Hiring)":
-    color: "#9400d3"
-    alias:
-      - "okr: build the team (hiring)"
-  "okr: improve ease of deployment":
-    color: "#9400d3"
-  "okr: improve new user experience":
-    color: "#9400d3"
-  "okr: managed meltano alpha":
-    color: "#9400d3"
-  "okr: managed meltano beta":
-    color: "#9400d3"
-  "okr: managed meltano commercial tier":
-    color: "#9400d3"
-  "okr: managed meltano enterprise tier":
-    color: "#9400d3"
-  "okr: managed meltano ga":
-    color: "#9400d3"
+  "offboarding":
+    color: "#c21e56"
+  "onboarding":
+    color: "#00b140"
   "office hours::discussed":
     color: "#36454f"
   "office hours::to discuss":
@@ -197,6 +173,8 @@ labels: &common
     color: "#D9534F"
   "plugin management":
     color: "#6699cc"
+  "process":
+    color: "#808080"
   "product":
     color: "#428BCA"
   "product vision":
@@ -287,6 +265,8 @@ labels: &common
     color: "#ededed"
   "urgency::high":
     color: "#c21e56"
+    alias:
+      - "priority::high"
   "urgency::higher":
     color: "#dc143c"
   "urgency::highest":
@@ -307,6 +287,30 @@ labels: &common
       - "telemetry"
   "reminder":
     color: "#ededed"
+
+leadership: &leadership
+  "designed alliance":
+    color: "#eee600"
+  "execsponsor/AJ":
+    alias:
+      - "execsponsor::aj"
+    color: "#6699cc"
+  "execsponsor/Douwe":
+    alias:
+      - "execsponsor::douwe"
+    color: "#6699cc"
+  "execsponsor/Emily":
+    alias:
+      - "execsponsor::emily"
+    color: "#6699cc"
+  "execsponsor/Reb":
+    alias:
+      - "execsponsor::reb"
+    color: "#6699cc"
+  "execsponsor/Taylor":
+    alias:
+      - "execsponsor::taylor"
+    color: "#6699cc"
 
 marketing: &marketing
   "content":
@@ -351,6 +355,44 @@ marketing: &marketing
   "website":
     color: "#BB6797"
 
+strategy: &strategy
+  "OKR: Be the DataOps Platform Infra":
+    color: "#9400d3"
+    alias:
+      - "okr: be the dataops os"
+  "OKR: Build the Team (Hiring)":
+    color: "#9400d3"
+    alias:
+      - "okr: build the team (hiring)"
+  "OKR: Ease of Deployment":
+    color: "#9400d3"
+    alias:
+      - "okr: improve ease of deployment"
+  "OKR: New User Experience":
+    color: "#9400d3"
+    alias:
+      - "okr: improve new user experience"
+  "OKR: Managed Meltano - Alpha":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano alpha"
+  "OKR: Managed Meltano - Beta":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano beta"
+  "OKR: Managed Meltano - Commercial Tier":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano commercial tier"
+  "OKR: Managed Meltano - Enterprise Tier":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano enterprise tier"
+  "OKR: Managed Meltano - GA":
+    color: "#9400d3"
+    alias:
+      - "okr: managed meltano ga"
+
 valuestream: &valuestream
   "valuestream/Academy":
     color: "#3cb371"
@@ -377,61 +419,79 @@ valuestream: &valuestream
     alias:
       - "valuestream::sdk"
 
-# Repositories
+all_labels: &all_labels
+  <<: *common
+  <<: *leadership
+  <<: *marketing
+  <<: *strategy
+  <<: *valuestream
+
+####################
+#   Repositories   #
+####################
 repos:
   "*":
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  meltano:
+      <<: *all_labels
+  administration:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  hub:
+      <<: *all_labels
+  dragon:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  sdk:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  squared:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
   handbook:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
+  hiring-process:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  hub:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  internal-data:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
   internal-general:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
+  internal-leadership:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
   internal-marketing:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
+  meltano:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  sdk:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  squared:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
