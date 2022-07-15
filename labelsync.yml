@@ -241,8 +241,9 @@ labels: &common
       - "user support"
   "visualization":
     color: "#5CB85C"
-  "windows support":
+  "Windows":
     color: "#428BCA"
+    alias: ["windows support"]
   "won't do":
     color: "#CC0033"
   "flow::blocked":
