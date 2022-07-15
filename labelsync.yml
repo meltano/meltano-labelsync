@@ -351,3 +351,315 @@ repos:
     labels:
       <<: *common
       <<: *valuestream
+  academy:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  administration:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  dbt-tap-zendesk:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  decision-log:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  demo-project:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  demo-repository:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  dragon:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-airflow:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-airflow-kubernetes:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-dagster:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-dbt:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-dbt-bigquery:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-dbt-mysql:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-dbt-postgres:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-dbt-redshift:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-dbt-snowflake:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-docker:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-docker-compose:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-gitlab-ci:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-great-expectations:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-lightdash:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-local-kubernetes:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  files-superset:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  flask-security:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  gitlab-to-github:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  gitops:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  handbook:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  helm-meltano:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  hiring-process:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  internal-data:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  internal-general:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  internal-infra:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  internal-leadership:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  internal-marketing:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  marketing-operations:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  meltano-cicd-lab-template:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  meltano-dbt-lab-template:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  meltano-dev-container-template:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  meltano-labelsync:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  meltano-run-action:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  orbit-templates:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  schemastore:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  singer-plugin-starter-template:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  speedrun:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  support:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  tap-salesforce:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  tap-socrata:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  tap-stripe:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  tap-zendesk:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  target-postgres:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  terraform-meltano:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
+  website:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+      <<: *valuestream  
