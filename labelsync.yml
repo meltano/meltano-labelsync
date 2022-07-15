@@ -1,14 +1,21 @@
 # Colors
 colors:
-  area: &area "#FFD700"
-  kind: &kind "#3B5BDB"
-  status: &status "#F8F9FA"
-  bug: &bug "#EE0000"
-  priority: &priority "#F783AC"
-  scope: &scope "#27CF79"
-  team: &team "#FDF4E8"
-  release: &release "#A5D8ff"
-  process: &process "#EB9100"
+  red: &red "#B60205"
+  orange: &orange "#D93F0B"
+  yellow: &yellow "#FBCA04"
+  green: &green "#0E8A16"
+  teal: &teal "#006B75"
+  blue: &blue "#1D76DB"
+  navy: &navy "#0052CC"
+  purple: &purple "#5319E7"
+  light_red: &light_red "#E99695"
+  light_orange: &light_orange "#F9D0C4"
+  light_yellow: &light_yellow "#FEF2C0"
+  light_green: &light_green "#C2E0C6"
+  light_teal: &light_teal "#BFDADC"
+  light_blue: &light_blue "#C5DEF5"
+  light_navy: &light_navy "#BFD4F2"
+  light_purple: &light_purple "#D4C5F9"
 
 # There's one YAML feature that you *absolutely* want to use in your config.
 #
@@ -139,10 +146,6 @@ labels: &common
     color: "#0033CC"
   "making money":
     color: "#5CB85C"
-  "marketing":
-    color: "#44AD8E"
-  "marketing::blog feature":
-    color: "#0000ff"
   "meltano - retrospective":
     color: "#0033CC"
   "meltano culture and values":
@@ -253,14 +256,6 @@ labels: &common
     color: "#ed9121"
     alias:
       - "kind::tech debt"
-  "plugin/Airflow":
-    color: "#0000ff"
-    alias:
-      - "plugin::airflow"
-  "plugin/SQLFluff":
-    color: "#808080"
-    alias:
-      - "plugin::sqlfluff"
   "urgency::default":
     color: "#ededed"
   "urgency::high":
@@ -326,6 +321,10 @@ marketing: &marketing
     color: "#6699cc"
   "hubspot":
     color: "#ededed"
+  "marketing":
+    color: "#44AD8E"
+  "marketing::blog feature":
+    color: "#0000ff"
   "Marketing Priority":
     description: "cross-functional support request"
     color: "#5319E7"
@@ -354,6 +353,24 @@ marketing: &marketing
     color: "#e6e6fa"
   "website":
     color: "#BB6797"
+
+plugins: &plugins
+  "plugin/Airflow":
+    color: *blue
+    alias:
+      - "plugin::airflow"
+  "plugin/dbt":
+    color: *light_navy
+  "plugin/Great Expectations":
+    color: *light_green
+  "plugin/Singer":
+    color: *blue
+  "plugin/SQLFluff":
+    color: "#808080"
+    alias:
+      - "plugin::sqlfluff"
+  "plugin/Superset":
+    color: *light_teal
 
 strategy: &strategy
   "OKR: Be the DataOps Platform Infra":
