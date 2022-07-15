@@ -62,6 +62,8 @@ labels: &common
     color: "#c39953"
   "breaking change":
     color: "#9400d3"
+  "candidate":
+    color: "#c39953"
   "CI/CD":
     color: "#e6e6fa"
     alias:
@@ -119,6 +121,8 @@ labels: &common
     color: "#e6e6fa"
   "handbook":
     color: "#3cb371"
+  "hired":
+    color: "#009966"
   "housekeeping":
     color: "#D10069"
   "incident":
@@ -153,6 +157,10 @@ labels: &common
     color: "#c21e56"
   "notebook":
     color: "#0033CC"
+  "offboarding":
+    color: "#c21e56"
+  "onboarding":
+    color: "#00b140"
   "office hours::discussed":
     color: "#36454f"
   "office hours::to discuss":
@@ -165,6 +173,8 @@ labels: &common
     color: "#D9534F"
   "plugin management":
     color: "#6699cc"
+  "process":
+    color: "#808080"
   "product":
     color: "#428BCA"
   "product vision":
@@ -255,6 +265,8 @@ labels: &common
     color: "#ededed"
   "urgency::high":
     color: "#c21e56"
+    alias:
+      - "priority::high"
   "urgency::higher":
     color: "#dc143c"
   "urgency::highest":
@@ -276,7 +288,9 @@ labels: &common
   "reminder":
     color: "#ededed"
 
-execsponsor: &execsponsor
+leadership: &leadership
+  "designed alliance":
+    color: "#eee600"
   "execsponsor/AJ":
     alias:
       - "execsponsor::aj"
@@ -407,7 +421,7 @@ valuestream: &valuestream
 
 all_labels: &all_labels
   <<: *common
-  <<: *execsponsor
+  <<: *leadership
   <<: *marketing
   <<: *strategy
   <<: *valuestream
