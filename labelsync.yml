@@ -408,7 +408,7 @@ repos:
     config:
       removeUnconfiguredLabels: false
     labels:
-      <<: *
+      <<: *common
       <<: *marketing
       <<: *valuestream
   internal-general:
@@ -425,5 +425,3 @@ repos:
       <<: *common
       <<: *marketing
       <<: *valuestream
-
-
