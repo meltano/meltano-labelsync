@@ -277,8 +277,12 @@ labels: &common
       - "kind::tech debt"
   "plugin/Airflow":
     color: "#0000ff"
+    alias:
+      - "plugin::airflow"
   "plugin/SQLFluff":
     color: "#808080"
+    alias:
+      - "plugin::sqlfluff"
   "urgency::default":
     color: "#ededed"
   "urgency::high":
