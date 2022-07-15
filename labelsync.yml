@@ -263,15 +263,21 @@ labels: &common
   "kind/Feature":
     color: "#428BCA"
     alias: ["enhancement","kind::feature"]
-  "kind::non-product":
+  "kind/Non-Product":
     color: "#36454f"
-  "kind::risk":
+    alias: 
+      - "kind::non-product"
+  "kind/Risk":
     color: "#eee600"
-  "kind::tech debt":
+    alias:
+      - "kind::risk"
+  "kind/Tech Debt":
     color: "#ed9121"
-  "plugin::airflow":
+    alias:
+      - "kind::tech debt"
+  "plugin/Airflow":
     color: "#0000ff"
-  "plugin::sqlfluff":
+  "plugin/SQLFluff":
     color: "#808080"
   "urgency::default":
     color: "#ededed"
@@ -340,7 +346,6 @@ marketing: &marketing
     color: "#e6e6fa"
   "website":
     color: "#BB6797"
-
 
 valuestream: &valuestream
   "valuestream/Academy":
