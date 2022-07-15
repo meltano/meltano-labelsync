@@ -256,14 +256,10 @@ labels: &common
     color: "#34495E"
   "kind/Bug":
     color: "#ff0000"
-    alias: 
-    - "bug"
-    - "kind::bug"
+    alias: ["bug", "kind::bug"]
   "kind/Feature":
     color: "#428BCA"
-    alias:
-      - "enhancement"
-      - "kind::feature"
+    alias: ["enhancement","kind::feature"]
   "kind::non-product":
     color: "#36454f"
   "kind::risk":
