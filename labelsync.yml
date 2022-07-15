@@ -377,61 +377,76 @@ valuestream: &valuestream
     alias:
       - "valuestream::sdk"
 
+all_labels: &all_labels
+  labels:
+    <<: *common
+    <<: *marketing
+    <<: *valuestream
+
 # Repositories
 repos:
   "*":
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  meltano:
+      <<: *all_labels
+  administration:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  hub:
+      <<: *all_labels
+  dragon:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  sdk:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
-  squared:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
   handbook:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
+  hiring-process:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  hub:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  internal-data:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
   internal-general:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
+  internal-leadership:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
   internal-marketing:
     config:
       removeUnconfiguredLabels: true
     labels:
-      <<: *common
-      <<: *marketing
-      <<: *valuestream
+      <<: *all_labels
+  meltano:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  sdk:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
+  squared:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *all_labels
