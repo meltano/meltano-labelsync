@@ -332,7 +332,7 @@ marketing: &marketing
   "Marketing::Blog Feature":
     color: "#0000FF"
     alias:
-      - "marketing::blog feature":
+      - "marketing::blog feature"
   "Marketing Priority":
     description: "cross-functional support request"
     color: *purple
