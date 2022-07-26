@@ -289,6 +289,20 @@ common: &common
   "reminder":
     color: "#EDEDED"
 
+data: &data
+  "data/Infrastructure":
+    color: "#008000"
+  "data/Data Movement":
+    color: "#00FFFF"
+  "data/Modeling":
+    color: "#FFFF00"
+  "data/Reporting":
+    color: "#00FF00"
+  "data/Ad Hoc Analysis":
+    color: "#FFBF00"
+  "data/Product Dogfooding":
+    color: "#FFFFFF"
+
 leadership: &leadership
   "designed alliance":
     color: "#EEE600"
@@ -446,6 +460,7 @@ valuestream: &valuestream
 
 all_labels: &all_labels
   <<: *common
+  <<: *data
   <<: *leadership
   <<: *marketing
   <<: *plugins
