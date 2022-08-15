@@ -302,7 +302,7 @@ data: &data
     color: "#FFBF00"
   "data/Product Dogfooding":
     color: "#FFFFFF"
-  "data/Hub Plugin Definitions":
+  "data/MeltanoHub Plugin Definitions":
     color: "#9400D3"
 
 leadership: &leadership
