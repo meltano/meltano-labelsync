@@ -302,6 +302,8 @@ data: &data
     color: "#FFBF00"
   "data/Product Dogfooding":
     color: "#FFFFFF"
+  "data/MeltanoHub Plugin Definitions":
+    color: "#9400D3"
 
 leadership: &leadership
   "designed alliance":
@@ -466,6 +468,7 @@ all_labels: &all_labels
   <<: *plugins
   <<: *strategy
   <<: *valuestream
+
 
 ####################
 #   Repositories   #
